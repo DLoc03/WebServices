@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS Reader VNExpress</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .news-item {
+            margin-bottom: 20px;
+        }
+        .news-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>VNExpress RSS Reader</h1>
+    
+    <form id="rss-form">
+        <input type="text" id="rss-url" placeholder="Nhập URL RSS" required>
+        <button type="submit">Lấy tin</button>
+    </form>
+
+    <div id="news-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
